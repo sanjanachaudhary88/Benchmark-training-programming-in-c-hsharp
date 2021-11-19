@@ -1,1 +1,1 @@
-# Benchmark-training-programming-in-c-hsharp
+# Benchmark-training-programming-in-c-sharp
