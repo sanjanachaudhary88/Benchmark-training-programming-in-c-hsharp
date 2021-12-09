@@ -1,0 +1,49 @@
+﻿@model MVCExample3.Models.DepartmentModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UpdateDepartment</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td> @Html.DisplayNameFor(model => model.depno)</td>
+                    <td>@Html.EditorFor(model => model.depno, new { id = "txtdno" })</td>
+                </tr>
+                <tr>
+                    <td> @Html.DisplayNameFor(model => model.dname)</td>
+                    <td>@Html.EditorFor(model => model.dname, new { id = "txtdname" })</td>
+                </tr>
+                <tr>
+                    <td> @Html.DisplayNameFor(model => model.location)</td>
+                    <td>@Html.EditorFor(model => model.location, new { id = "txtlocation" })</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="update Department" id="btnsubmit" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Back To List", "Index")
+                    </td>
+                </tr>
+
+
+            </table>
+
+
+
+
+        }
+    </div>
+</body>
+</html>

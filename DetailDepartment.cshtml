@@ -1,0 +1,47 @@
+﻿@model MVCExample3.Models.DepartmentModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DetailDepartment</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td> @Html.DisplayNameFor(model => model.depno)</td>
+                    <td>@Html.DisplayFor(model => model.depno, new { id = "txtdno" })</td>
+                </tr>
+                <tr>
+                    <td> @Html.DisplayNameFor(model => model.dname)</td>
+                    <td>@Html.DisplayFor(model => model.dname, new { id = "txtdname" })</td>
+                </tr>
+                <tr>
+                    <td> @Html.DisplayNameFor(model => model.location)</td>
+                    <td>@Html.DisplayFor(model => model.location, new { id = "txtlocation" })</td>
+                </tr>
+
+                <tr>
+                    
+                    <td colspan="2">
+                        @Html.ActionLink("Back To List", "Index")
+                    </td>
+                </tr>
+
+
+            </table>
+
+
+
+
+        }
+    </div>
+</body>
+</html>
