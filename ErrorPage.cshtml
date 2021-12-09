@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ErrorPage</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.Label("errorMessage", "Error : " + TempData["err"].ToString())
+            <br />
+            @Html.ActionLink("Back", TempData["Backpage"].ToString())
+
+        }
+
+
+    </div>
+</body>
+</html>
