@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 5)Write JS code for to print if arrayElement is even then print square of that 
+	//      number other wise print cube of odd number.
+    
+    const arr=new Array(12,11,33,44,40,60)
+    for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            let res=arr[i]*arr[i];
+            document.write("even number: Square is"+res+"<br>");
+        }
+        else
+        {
+            let res1=arr[i]*arr[i]*arr[i];
+            document.write("odd number: cube is"+res1+"<br>");
+
+        }
+    }
+ 
+    </script>
+</body>
+</html>

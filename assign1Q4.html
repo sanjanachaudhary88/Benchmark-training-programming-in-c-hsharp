@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 4)Write JS code for sort Array of type number
+    let numarr=new Array(12,34,23,11,35);
+    
+
+
+    let temp=0;
+    var l=numarr.length;
+    for(let i=0;i<l;i++)
+    {
+        for(let j=i+1;j<l;j++)
+       {
+        if(numarr[i]>numarr[j])
+        {
+                temp=numarr[i];
+                numarr[i]=numarr[j];
+                numarr[j]=temp;
+            
+        }
+
+    }
+    }
+    for(let i=0;i<l;i++)
+    {
+ document.write(numarr[i]+"<br>");
+    }
+
+    
+
+
+    </script>
+</body>
+</html>
