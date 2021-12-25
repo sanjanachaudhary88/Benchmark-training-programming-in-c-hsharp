@@ -1,0 +1,78 @@
+<table>
+
+    <th>Enter Student Details</th>
+
+<tr>
+<td>Enter Name</td>
+<td><input type="text" [(ngModel)]="Name"><br></td>
+</tr>
+
+<tr>
+<td>Enter Roll No</td>
+<td><input type="number" [(ngModel)]="RollNo"><br></td>
+</tr>
+
+<tr>
+<td>Enter Maths Marks</td>
+<td><input type="number" [(ngModel)]="Ma"><br></td>
+</tr>
+
+<tr>
+<td>Enter Science Marks</td>
+<td><input type="number" [(ngModel)]="Sc"><br></td>
+</tr>
+
+<tr>
+<td>Enter English Marks</td>
+<td><input type="number" [(ngModel)]="En"><br></td>
+</tr>
+
+<tr>
+    <button (Click)="percentage()">Calculate Percentage</button>
+</tr>
+<!-- 4)	Create Student component accept id,name,marks for 3 subject calculate percentage
+And display data in tabular format -->
+
+
+
+</table> 
+
+<h1>Student Marksheet</h1>
+<table border="3">
+    <tr>
+        <td attr.colspan={{colspan}}>Student Marksheet</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td attr.colspan={{colspan1}}>{{Name}}</td>
+
+    </tr>
+    <tr>
+        <td>Roll No</td>
+        <td attr.colspan={{colspan1}}>{{RollNo}}</td>
+
+    </tr>
+    <tr>
+        <td attr.rowspan={{rowspan}}>Marks</td>
+    
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <tr>
+            <td>{{Ma}}</td>
+            <td>{{Sc}}</td>
+            <td>{{En}}</td>
+            
+        
+    </tr>
+ 
+    
+
+    <tr>
+        <td>percentage</td>
+        <td attr.colspan={{colspan1}}>{{percentage()}}</td> 
+    </tr>
+
+</table>
+© 2021 GitHub, Inc.
+Terms
