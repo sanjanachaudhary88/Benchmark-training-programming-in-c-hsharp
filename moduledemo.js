@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var calculation_1 = require("./calculation");
+var multicalculation_1 = require("./multicalculation");
+var obj1 = new calculation_1.Area();
+obj1.Area();
+var obj2 = new multicalculation_1.Circle();
+obj2.circle(4);
+var obj3 = new multicalculation_1.Rectangle();
+obj3.rectangle(5, 6);
+var obj4 = new multicalculation_1.Square();
+obj4.square(8);
